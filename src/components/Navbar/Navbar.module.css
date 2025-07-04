@@ -41,6 +41,7 @@
 
 .links {
   display: flex;
+  margin-top: 0px;
   list-style: none;
   gap: 2rem;
 }

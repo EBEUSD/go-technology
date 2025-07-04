@@ -2,7 +2,7 @@
   --bg-footer: #f0f0f0;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --bg-footer: #111;
 }
 
@@ -67,12 +67,10 @@
   font-size: 0.9rem;
   opacity: 0.6;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   max-width: 1366px;
   margin: auto;
   margin-top: 1.5rem;
-
-
 }
 
 @media (min-width: 600px) {
@@ -87,6 +85,10 @@
   }
 
   .social {
+    justify-content: flex-end;
+  }
+
+  .copy {
     justify-content: flex-end;
   }
 }
