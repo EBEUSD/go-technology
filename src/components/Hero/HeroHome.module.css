@@ -1,0 +1,87 @@
+
+
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 85vh;
+  padding: 2rem;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  transition: background var(--transition), color var(--transition);
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #fff;
+
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
+}
+
+.cta {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 0.85rem 2.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.cta:hover {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.2rem;
+  }
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .cta {
+    font-size: 0.95rem;
+  }
+}
